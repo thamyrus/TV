@@ -1,0 +1,314 @@
+
+/* incorporando as fontes */
+
+
+         @font-face {
+
+            font-family: agencyfb;
+            src: url('data/fontes/agencyr.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+         @font-face {
+
+            font-family: agencyfb;
+            src: url('data/fontes/agencyb.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+
+         @font-face {
+
+            font-family: openssans;
+            src: url('data/fontes/openssans.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+  
+            /* tamanho da tela e cor */
+
+                      body {
+                        width:1366px;
+                        height:768px;
+                        background-color:#c7ebf9;
+                        
+                      } 
+ 
+
+
+            /* logo e menu */
+
+                      img#logo{
+                        width: 22%;
+                        text-align: left;   
+                      }
+
+
+                      ul#navigation{ 
+
+                        width: auto;
+                        box-shadow: 7px 7px 7px -2px  rgba(100,100,100,1);
+
+                        display:inline-flex;
+                        list-style-type: none;
+
+                        padding: 0;
+                        overflow: hidden;
+                        background-color: #1a1a1a;
+                        border-radius: 20px 20px 0px 0px;
+
+                       }
+
+                      li.nav { 
+
+                        float: right;
+                        border-right:1px solid #ccc;
+
+                        font-family:  agencyfb,sans-serif;
+                        font-size: 1.6em;
+                        letter-spacing:7px;
+                        text-rendering: optimizeLegibility;
+                        font-weight: bold;
+
+                        display: inline-flex;
+                        color: #ffc2ff;
+                        text-align: center;
+                        padding: 15px 25px;
+                        text-decoration: none;
+                        transition: 1s ease-in-out;
+                      }
+
+
+                    li.nav:hover{
+
+                        background-color: #444444;
+                        color: #23ced1;
+                        cursor: pointer;
+                    }
+
+
+      /* titulo do canal */
+
+           header#heading{
+                
+                display: inline-flex;
+                margin-left: 60px;
+                margin-top: 100px;
+                height: 90px;
+                width: auto;
+                padding: 8px 0px 0px 30px;
+                background-color:#1a1a1a;
+                border-radius: 20px 20px 0px 0px;
+            }
+
+
+            img#imgChannel{
+
+                width: 70px;
+                height: 70px;
+                float:left;
+                border-style: solid;
+                border-radius: 100px;
+                border-width: 2px;
+                padding: 3px;
+                background-color: #ffc2ff;
+            }
+
+
+                h1#channelTitle{
+                
+                padding-left: 18px;
+                margin-bottom: 60px;
+                font-family:  agencyfb,sans-serif;
+                color: #ffc2ff;
+                cursor: default;
+                
+            }
+
+             
+       /* corpo do video */
+    
+
+        div#display {
+
+            background-image: url(data/imagens/fundo2.png);
+            text-align: center;
+            margin: 0px 60px 0px 60px;
+            padding: 40px 30px 15px 30px;   
+            background-size: 140%;
+            box-shadow: -8px -14px 240px 78px rgba(242,158,203,1);      
+        }
+
+
+
+        video#video{
+            text-align: center;
+            margin: 0 auto;
+        }
+
+
+
+        /* estilizando e posicionando botões */
+
+            button#changeChannel {
+                   padding-top: 10px;
+                   padding-left: 10px;
+                   margin: 0px 15px 18px 13px;
+                   font-size: 2em;
+                   color: #ccc;
+                   transition: 2s ease-in-out;
+                   background-color:#1a1a1a;
+                   border: none;   
+             }
+             
+          button#changeSchedule {
+                   font-size: 12px;
+                   margin-top: 5px;
+                   background: #23ced1;
+                   color:#ffc2ff;
+                   transition: 2s ease-in-out;
+            }
+
+            button#changeChannel:hover {
+               transition:1s ease-in-out;
+               color: #23ced1;
+               cursor: pointer;
+               font-size: 2.5em;
+            }
+
+            /* estilizando o slider de volume */
+
+            div#displayVolume {
+                text-align: center;
+                margin-top: 15px;
+                margin-bottom: 10px;
+            }
+
+            label {
+                font-family: agencyfb,sans-serif;
+                font-weight: bold;
+                color:#FFCCAC; 
+                text-shadow:#000 1px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px;
+                font-size: 1.5em;
+                color:  #ffc2ff;
+            }
+
+                    input[type=range] {
+                      -webkit-appearance: none; 
+                      width: 25%;
+                      background:none;
+                    }
+
+                    input[type=range]::-webkit-slider-thumb {     
+                      cursor:pointer;
+                    }
+
+                    input[type=range]:focus {   
+                      outline: none;
+                      cursor: pointer; 
+                    }
+
+                   input[type=range]::-moz-range-track {
+                      background:black;
+                      width: 100%;
+                      cursor: pointer;
+                    }
+
+                  input[type=range]::-webkit-slider-runnable-track {
+                       cursor: pointer;
+                     }
+
+                  input[type=range]::-moz-range-thumb {
+                      background:#ffc2ff;
+                      cursor: pointer;
+                    }
+
+                    input[type=range]::-ms-thumb {    
+                      cursor: pointer;
+                    }
+
+                    input[type=range]::-ms-track {
+                        
+                      width: 100%;
+                      cursor: pointer;
+                      background: transparent; 
+                      border-color: transparent;
+                      color: transparent;
+                    }
+
+
+
+
+
+
+            /* aba da programação */
+                        
+
+                    div#displaySchedule {
+                                margin-left: 60px;
+                                padding-left: 130px;
+                                width: 20%;
+                                height: 84px;
+                                color: black;
+                                overflow: hidden;
+                                transition:1s ease-in-out;
+                                white-space: nowrap;
+                            }
+
+                    div#displaySchedule:hover {
+                                padding-left: 90px;
+                                cursor: pointer;
+                                color:#ffc2ff;
+                                height: auto;
+                                width: 84.60%;
+                                background-color:#1a1a1a;
+                                border-radius: 0px 0px 20px 20px;
+                                
+                            }
+
+
+                             ul#schedule{ 
+                               font-family: openssans, sans-serif; 
+                               list-style-type: none;
+                            }
+
+                            li.description {
+                                color: #23ced1;
+                                text-align: center;
+                                white-space: pre;
+                                padding-bottom: 40px;
+                            }
+
+                            li.schedule {
+                                color:#ffc2ff;
+                                text-align: center;
+                                
+                            }
+
+                            
+                             h2#channelTitleSchedule { 
+                                font-family:  agencyfb, sans-serif;
+                                font-size: 45px;
+                                font-weight: normal;
+                                text-align: center;
+                                 color: #23ced1;
+                            }
+
+                             h1#title { 
+                                font-family:  agencyfb, sans-serif;
+                                font-size: 35px;
+                            }                    
+                              
+
+          /* rodapé */
+
+        footer{
+
+            margin: 100px 30px 10px 0px;
+            font-family: agencyfb, tahoma, sans-serif;
+            font-size: 16px;
+            float: right;   
+        }
